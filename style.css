@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(43, 42, 42);
+}
+
+h1{ text-align: center; color: #FAEDBC; }
+
+.containerApp{
+    text-align: center;
+    width: 350px;
+    margin: auto;
+    margin-top: 50px;
+    position: relative;
+}
+
+#inputText{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-align: center;
+    font-size: 20px;
+    background-color: rgb(95, 94, 94);
+    color: #fff;
+}
+
+#users{
+    text-align: center;
+    list-style: none;
+    background-color: rgb(177, 177, 177);
+    margin: auto;
+    padding-top: 5px;
+    min-height: 200px;
+    max-height: 400px;
+    overflow-y: scroll;
+}
+#loadingDataUsers{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100%;
+    text-align: center;
+    transform: translate(-50%,-50%);
+}
+#users li{
+    text-align: center;
+    margin-left: -30px;
+    user-select: none;
+    font-size: 18px;
+    line-height: 25px;
+}
+#users li:hover{ background-color: rgb(158, 156, 156); }
+
+
+#users::-webkit-scrollbar{ width: 10px }
+#users::-webkit-scrollbar-thumb{ 
+    background-color: #000; 
+    border-radius: 20px;
+    border: 2px solid rgb(177, 177, 177);
+}
